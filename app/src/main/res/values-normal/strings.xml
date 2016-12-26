@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Ayatul Kursi</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-1653838535522735/2233348009</string>
+    <string name="interstial_ad_id">ca-app-pub-1653838535522735/3710081208</string>
+    <string name="ads_app_id">ca-app-pub-1653838535522735~3855172001</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_rate">Rate</string>
+    <string name="action_moreapp1">6 Kalma</string>
+    <string name="action_moreapp2">4Qul</string>
+    <string name="action_moreapp3">Currency Converter</string>
+
+    <array name="language_list">
+        <item>Arabic</item>
+        <item>English</item>
+        <item>Urdu</item>
+    </array>
+
+</resources>

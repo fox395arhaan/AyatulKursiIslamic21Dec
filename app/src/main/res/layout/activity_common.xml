@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMainButtonPressed"
+            android:adjustViewBounds="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ayatlkursi_screen_common_arabic_text_image"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="50dp"
+                android:contentDescription=""
+                tools:ignore="ContentDescription"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/middleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorNavBar"
+            android:gravity="bottom|fill_horizontal">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleLayout"
+            tools:ignore="DuplicateIds">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPlay"
+                android:background="@drawable/playbutton"
+                android:layout_centerInParent="false"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ayatlkursi_screen_common_arabic_text_image"
+                android:id="@+id/imageView5"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:contentDescription=""
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/middleLayout"
+            android:layout_below="@id/titleLayout"
+            tools:ignore="DuplicateIds"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:ignore="UselessParent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ayatlkursi_screen_common_aya_box_image"
+                    android:id="@+id/ivMiddleRect"
+                    android:contentDescription=""
+                    android:layout_centerInParent="true"
+                    tools:ignore="ContentDescription"
+                    android:keepScreenOn="false" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/midleCotentsLayout"
+                    android:layout_above="@id/ivMiddleRect"
+                    android:layout_alignTop="@+id/ivMiddleRect"
+                    android:layout_alignBottom="@+id/ivMiddleRect"
+                    android:layout_below="@+id/ivMiddleRect"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ayatlkursi_screen_common_basmala_image"
+                        android:id="@+id/ivContentTitle"
+                        android:contentDescription=""
+                        tools:ignore="ContentDescription"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/common_title_topmargin"
+                        android:layout_marginLeft="@dimen/common_space"
+                        android:layout_marginRight="@dimen/common_space" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ayatlkursi_screen_common_aya_arabic_text_image"
+                        android:id="@+id/ivContents"
+                        android:layout_centerHorizontal="false"
+                        android:contentDescription=""
+                        tools:ignore="ContentDescription"
+                        android:layout_marginTop="@dimen/common_space"
+                        android:layout_centerInParent="false"
+                        android:layout_below="@+id/ivContentTitle"
+                        android:layout_marginBottom="@dimen/common_title_topmargin"
+                        android:layout_marginLeft="@dimen/common_space"
+                        android:layout_marginRight="@dimen/common_space" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    tools:ignore="RelativeOverlap,RtlHardcoded"
+                    android:id="@+id/rightButtonLayout"
+                    android:layout_toRightOf="@+id/midleCotentsLayout">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ads:srcCompat="@drawable/ayatlkursi_screen_common_right_arrow_button"
+                        android:id="@+id/btnMoveRight"
+                        android:background="#00000000"
+                        android:layout_centerVertical="false"
+                        android:scaleType="fitStart"
+                        android:contentDescription=""
+                        tools:ignore="ContentDescription"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerInParent="false"
+                    android:id="@+id/leftButtonLayout"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_toLeftOf="@+id/midleCotentsLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="false"
+                    android:layout_centerHorizontal="false"
+                    android:gravity="left|center_vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        ads:srcCompat="@drawable/ayatlkursi_screen_common_left_arrow_button"
+                        android:id="@+id/btnMoveLeft"
+                        android:background="#00000000"
+                        android:layout_centerVertical="false"
+                        android:scaleType="fitStart"
+                        android:contentDescription=""
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/middleLayout"
+        android:id="@+id/playLayout"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:ignore="RelativeOverlap,RtlHardcoded,UselessParent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSound"
+                android:background="#00000000"
+                android:drawableRight="@drawable/soundbutton"
+                tools:ignore="RtlHardcoded"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <SeekBar
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar"
+                    android:layout_width="100dp"
+                    android:thumb="@drawable/ayatlkursi_screen_common_circle_indecator_image"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

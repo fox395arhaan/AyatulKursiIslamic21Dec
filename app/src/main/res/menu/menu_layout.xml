@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_moreapp1"
+        android:orderInCategory="100"
+        android:title="@string/action_moreapp1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_moreapp2"
+        android:orderInCategory="100"
+        android:title="@string/action_moreapp2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_moreapp3"
+        android:orderInCategory="100"
+        android:title="@string/action_moreapp3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="@string/action_share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rate"
+        android:orderInCategory="100"
+        android:title="@string/action_rate"
+        app:showAsAction="never" />
+
+</menu>
