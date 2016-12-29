@@ -157,10 +157,6 @@ public class CommonActivity extends AppCompatActivity {
         if (index < 0 || index >= langs.length)
             return;
 
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        }
-
         String language = langs[index];
         switch (index) {
             case 0: //arabic
@@ -315,7 +311,9 @@ public class CommonActivity extends AppCompatActivity {
         setResult(RESULT_CANCELED);
 
         stopSound();
-
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         super.onBackPressed();
     }
 }

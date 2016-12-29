@@ -155,9 +155,9 @@ public class MainActivity extends AppCompatActivity {
     }
     void gotoCommonActivity(int index)
     {
-//        if (mInterstitialAd.isLoaded()) {
-//            mInterstitialAd.show();
-//        }
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
 //        else {
             Intent intent = new Intent(MainActivity.this, CommonActivity.class);
             Bundle b = new Bundle();
